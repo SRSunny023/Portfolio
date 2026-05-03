@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Portfolio</title>
+
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+            *{
+
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            body{
+
+                background-color: black;
+
+            }
+
+            .navigation-bar{
+
+                background-image: linear-gradient(to right, #5bdce5, #014cae);
+                height: 100px;
+                display: flex;
+                cursor: pointer;
+
+            }
+
+            footer{
+
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+
+            }
+
+            .title-text{
+
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+                color: #5e17eb;
+
+            }
+
+            .footer-text{
+
+                font-size: 25px;
+
+            }
+
+            .navigation-content{
+
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+            .navigation-content > button{
+
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                color: white;
+                cursor: pointer;
+                font-size: 20px;
+
+            }
+
+            .footer-content > a{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .nav-drop-down-container{
+
+                width: 100%;
+                position: relative;
+
+            }
+
+            #drop-down-button{
+
+                background-color: transparent;
+                border: none;
+                width: 100%;
+                height: 100%;
+                color: white;
+                cursor: pointer;
+                font-size: 20px;
+
+            }
+
+            .nav-drop-down-content{
+
+                display: none;
+                position: absolute;
+                top: 100px;
+                left: 0;
+                right: 0;
+                text-align: center;
+
+            }
+
+            .nav-drop-down-content > button{
+
+                background-color: #014cae;
+                border: none;
+                width: 100%;
+                padding: 10px;
+                color: white;
+                cursor: pointer;
+                font-size: 20px;
+
+            }
+
+            .nav-drop-down-container:hover .nav-drop-down-content{
+
+                display: block;
+
+            }
+
+            .nav-drop-down-content button:hover{
+
+                background-color: #00214d;
+                color: red;
+
+            }
+
+            /* Width */
+            /* Extra large small devices (phones, 200px and down) */
+            @media only screen and (min-width: 50px) and (max-width: 199px) {
+
+                .title-text{ font-size: 6px; }
+                .footer-text{ font-size: 4px; }
+                .nav-drop-down-content > button{ font-size: 3px; }
+                .navigation-content > button{ font-size: 4px; }
+                #drop-down-button{ font-size: 4px; }
+                .footer-content > a > img{ width: 15px; height: 15px; }
+                .footer-content > a > .linkedin-img{ width: 30px; height: 30px }
+            
+            }
+
+            /* Extra small devices (phones, 200px and up) */
+            @media only screen and (min-width: 200px) and (max-width: 400px) {
+
+                .title-text{ font-size: 10px; }
+                .footer-text{ font-size: 7px; }
+                .nav-drop-down-content > button{ font-size: 6px; }
+                .navigation-content > button{ font-size: 10px; }
+                #drop-down-button{ font-size: 10px; }
+                .footer-content > a > img{ width: 25px; height: 25px; }
+                .footer-content > a > .linkedin-img{ width: 45px; height: 45px }
+            
+            }
+            
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (min-width: 401px) and (max-width: 600px) {
+
+                .title-text{ font-size: 14px; }
+                .footer-text{ font-size: 9px; }
+                .nav-drop-down-content > button{ font-size: 8px; }
+                .navigation-content > button{ font-size: 13px; }
+                #drop-down-button{ font-size: 13px; }
+                .footer-content > a > img{ width: 30px; height: 30px; }
+                .footer-content > a > .linkedin-img{ width: 50px; height: 50px }
+            
+            }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+
+                .title-text{ font-size: 22px; }
+                .footer-text{ font-size: 13px; }
+                .nav-drop-down-content > button{ font-size: 12px; }
+
+            }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+
+                .title-text{ font-size: 30px; }
+                .footer-text{ font-size: 18px; }
+                .nav-drop-down-content > button{ font-size: 16px; }
+
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+
+                .title-text{ font-size: 35px; }
+                .footer-text{ font-size: 20px; }
+
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+
+                .title-text{ font-size: 50px; }
+                .footer-text{ font-size: 25px; }
+
+            }
+            /* Width */
+
+            /* Height */
+            /* Extra large small devices (phones, 200px and down) */
+            @media only screen and (min-height: 50px) and (max-height: 199px) {
+
+                .navigation-bar{ height: 35px; }
+                .nav-drop-down-content{
+
+                    top: 35px;
+
+                }
+
+                .nav-drop-down-content > button{
+
+                    padding: 4px;
+                    font-size: 6px;
+
+                }
+            
+            }
+            /* Height */
+
+
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <header>
+
+            <nav class="navigation-bar">
+
+                <nav class="title-text">
+
+                    <h3>SRS PORTFOLIO</h3>
+
+                </nav>
+
+                <nav class="navigation-content">
+
+                    <button>HOME</button>
+                    <button>PROJECTS</button>
+
+                    <nav class="nav-drop-down-container">
+
+                        <button id="drop-down-button">MORE</button>
+                        
+                        <nav class="nav-drop-down-content">
+                            <button>ABOUT ME</button> <br>
+                            <button>EDUCATION</button> <br>
+                            <button>SKILLS</button> <br>
+                            <button>ACHIEVEMENTS</button>
+                        </nav>
+
+                    </nav>
+                    
+
+                </nav>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+
+
+        </main>
+
+        <footer>
+
+            <nav class="navigation-bar">
+
+                <nav class="title-text footer-text">
+
+                    <h3>&copy; Siamur Rahman Sunny - 2026</h3>
+
+                </nav>
+
+                <nav class="navigation-content footer-content">
+
+                    <a><img class="linkedin-img" src="Images/LinkedIn.png" alt="LinkedIn" title="LinkedIn" width="100px" height="100px"></a>
+                    <a><img src="Images/Github.png" alt="Github" title="Github" width="60px" height="60px"></a>
+                    <a><img src="Images/Gmail.png" alt="Gmail" title="Gmail" width="60px" height="60px"></a>
+                    <a><img src="Images/Phone.png" alt="+880-1345859610" title="Phone" width="60px" height="60px"></a>
+
+                </nav>
+
+            </nav>
+
+        </footer>
+        
+    </body>
+
+</html>
