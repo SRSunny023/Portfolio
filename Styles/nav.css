@@ -96,6 +96,18 @@
 
 }
 
+.navigation-content > button:hover{
+
+    color: #00214d;
+
+}
+
+#drop-down-button:hover{
+
+    color: #00214d;
+
+}
+
 /************ Dropdown ************/
 
 /************ Navigation Bar ************/
