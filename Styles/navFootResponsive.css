@@ -1,0 +1,211 @@
+/************ NAVIGATION & FOOTER RESPONSIVENESS ************/
+
+/************ Width ************/
+
+/************ 50-199px ************/
+@media only screen and (min-width: 50px) and (max-width: 199px) {
+
+    .title-text{ 
+        font-size: 6px;
+    }
+
+    .footer-text{ 
+        font-size: 4px;
+    }
+
+    .nav-drop-down-content > button{ 
+        font-size: 3px;
+    }
+
+    .navigation-content > button{ 
+        font-size: 4px;
+    }
+
+    #drop-down-button{ 
+        font-size: 4px;
+    }
+
+    .footer-content > a > img{ 
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer-content > a > .linkedin-img{ 
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+/************ 200-400px ************/
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+
+    .title-text{ 
+        font-size: 10px;
+    }
+
+    .footer-text{ 
+        font-size: 7px;
+    }
+
+    .nav-drop-down-content > button{ 
+        font-size: 6px;
+    }
+
+    .navigation-content > button{ 
+        font-size: 10px;
+    }
+
+    #drop-down-button{ 
+        font-size: 10px;
+    }
+
+    .footer-content > a > img{ 
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-content > a > .linkedin-img{ 
+        width: 45px;
+        height: 45px;
+    }
+   
+}
+            
+/************ 401-600px ************/
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+
+    .title-text{ 
+        font-size: 14px;
+    }
+
+    .footer-text{ 
+        font-size: 9px;
+    }
+
+    .nav-drop-down-content > button{ 
+        font-size: 8px;
+    }
+
+    .navigation-content > button{ 
+        font-size: 13px;
+    }
+
+    #drop-down-button{ 
+        font-size: 13px;
+    }
+
+    .footer-content > a > img{ 
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-content > a > .linkedin-img{ 
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/************ 600px and Up ************/
+@media only screen and (min-width: 600px) {
+
+    .title-text{ 
+        font-size: 22px;
+    }
+
+    .footer-text{ 
+        font-size: 13px;
+    }
+
+    .nav-drop-down-content > button{ 
+        font-size: 12px;
+    }
+
+}
+
+/************ 768px and Up ************/
+@media only screen and (min-width: 768px) {
+
+    .title-text{ 
+        font-size: 30px;
+    }
+
+    .footer-text{ 
+        font-size: 18px;
+    }
+
+    .nav-drop-down-content > button{ 
+        font-size: 16px;
+    }
+
+}
+
+/************ 992px and Up ************/
+@media only screen and (min-width: 992px) {
+
+    .title-text{ 
+        font-size: 35px;
+    }
+
+    .footer-text{ 
+        font-size: 20px;
+    }
+
+}
+
+/************ 1200px and Up ************/
+@media only screen and (min-width: 1200px) {
+
+    .title-text{ 
+        font-size: 50px;
+    }
+
+    .footer-text{ 
+        font-size: 25px;
+    }
+
+}
+
+/************ 1920px and Up ************/
+
+@media only screen and (min-width: 1920px) {
+
+    .title-text{
+        font-size: 50px;
+    }
+
+    .footer-text{
+        font-size: 25px;
+    }
+
+}
+
+/************ Width ************/
+
+
+
+/************ Height ************/
+
+/************ 50-199px ************/
+@media only screen and (min-height: 50px) and (max-height: 199px) {
+
+    .navigation-bar{ height: 35px; }
+    .nav-drop-down-content{
+
+        top: 35px;
+
+    }
+
+    .nav-drop-down-content > button{
+
+        padding: 4px;
+        font-size: 6px;
+
+    }
+            
+}
+
+/************ Height ************/
+
+/************ NAVIGATION & FOOTER RESPONSIVENESS ************/

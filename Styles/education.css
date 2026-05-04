@@ -1,0 +1,188 @@
+/************ CARD SECTION ************/
+
+.main-section{
+
+    height: 100%;
+    display: flex;
+
+}
+            
+.logo-section{
+
+    width: 40%;
+
+}
+
+.upper-logo{
+
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20%;
+
+}
+
+.lower-logo{
+
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25%;
+
+}
+
+.sjhss-logo{
+
+    width: 33%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(190, 181, 175);
+
+}
+
+.fbic-logo{
+
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(190, 181, 175);
+
+}
+
+.diu-logo{
+
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgb(190, 181, 175);
+    margin-top: -40%;
+
+}
+
+.details-section{
+
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.diu-card{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.joseph-card{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.fbic-card{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+
+}
+
+.card{
+
+    background-color: #ffbd59;
+    border: 1px solid black;
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 30px;
+    padding: 2px 16px;
+    box-shadow: 0 4px 8px 0 rgb(73, 68, 65);
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-columns: 130px;
+    grid-template-areas: 
+    
+    'card-title'
+    'card-institute'
+    'card-result'
+    'card-footer'
+    
+    ;
+
+}
+
+.card-footer{
+
+    grid-area: card-footer;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+
+.card-title{
+
+    grid-area: card-title;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+
+.card-institute{
+
+    grid-area: card-institute;
+    font-size: 26px;
+
+}
+
+.card-result{
+
+    grid-area: card-result;
+    font-size: 26px;
+
+}
+
+
+.diu-logo:hover{
+
+    border: 1px solid red;
+    background-color: white;
+
+}
+
+.sjhss-logo:hover{
+
+    border: 1px solid red;
+    background-color: white;
+
+}
+
+.fbic-logo:hover{
+
+    border: 1px solid red;
+    background-color: white;
+
+}
+
+.card:hover{
+
+    background-color: #eca437;
+    cursor: default;
+
+}
+
+/************ CARD SECTION ************/
