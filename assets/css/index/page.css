@@ -1,4 +1,4 @@
-.main-body-part{
+.index-main-body-part{
 
     grid-area: mbPart;
     height: 100%;
@@ -86,15 +86,15 @@
     grid-template-columns: 40% 60%;
     grid-template-areas: 
     
-        'cardSection circleSection';
+        'index-card-section circleSection';
 
     ;
 
 }
 
-.card-section{
+.index-card-section{
 
-    grid-area: cardSection;
+    grid-area: index-card-section;
     display: grid;
     place-items: center;
 

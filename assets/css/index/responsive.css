@@ -50,9 +50,9 @@
     }
     
 
-    /*********** BODY PART ***********/
+    /*********** INDEX PAGE ***********/
     
-    .main-body-part{
+    .index-main-body-part{
 
         display: grid;
         grid-template-columns: 30% 70%;
@@ -82,6 +82,77 @@
         width: 80%;
         height: 80%;
         font-size: 1.9em;
+
+    }
+
+    /*********** EDUCATION PAGE ***********/
+
+    .education-main-body-part{
+
+        grid-area: mbPart;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        
+            'logo-section education-card-section'
+        
+        ;
+
+    }
+
+    .logo-section{
+
+        grid-area: logo-section;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+        
+            'diu-logo diu-logo'
+            'sjhss-logo fbic-logo'
+
+        ;
+        place-items: center;
+
+    }
+
+    .diu-logo{
+
+        width: 35%;
+
+    }
+
+    .sjhss-logo{
+
+        width: 60%;
+
+    }
+
+    .fbic-logo{
+
+        width: 60%;
+
+    }
+
+    .education-card-section{
+
+        grid-area: education-card-section;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        
+            'diu-card sjhss-card fbic-card'
+        
+        ;
+        place-items: center;
+
+    }
+
+    .common-card{
+
+        width: 70%;
+        font-size: 1.5em;
+        padding: 0.7em;
 
     }
 
@@ -140,9 +211,9 @@
     }
     
 
-    /*********** BODY PART ***********/
+    /*********** INDEX PAGE ***********/
     
-    .main-body-part{
+    .index-main-body-part{
 
         display: grid;
         grid-template-rows: 20% 80%;
@@ -196,14 +267,14 @@
         grid-template-rows: 40% 60%;
         grid-template-areas: 
         
-            'cardSection'
+            'index-card-section'
             'circleSection';
 
         ;
 
     }
 
-    .card-section{
+    .index-card-section{
 
         width: 100vw;
         display: flex;
@@ -255,6 +326,78 @@
         width: 20vw;
         height: 80%;
         font-size: 1.3em;
+
+    }
+
+    /*********** EDUCATION PAGE ***********/
+
+    .education-main-body-part{
+
+        height: 100%;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: 
+        
+            'logo-section'
+            'education-card-section'
+        
+        ;
+
+    }
+
+    .logo-section{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        
+            'diu-logo sjhss-logo fbic-logo'
+
+        ;
+        place-items: center;
+        width: 100vw;
+
+    }
+
+    .diu-logo{
+
+        width: 50%;
+
+    }
+
+    .sjhss-logo{
+
+        width: 50%;
+
+    }
+
+    .fbic-logo{
+
+        width: 50%;
+
+    }
+
+    .education-card-section{
+
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        
+            'diu-card'
+            'sjhss-card'
+            'fbic-card'
+        
+        ;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+    .common-card{
+
+        width: 100%;
+        font-size: 1.5em;
+        padding: 0em;
 
     }
 
@@ -360,9 +503,9 @@
     }
     
 
-    /*********** BODY PART ***********/
+    /*********** INDEX PAGE ***********/
     
-    .main-body-part{
+    .index-main-body-part{
 
         display: grid;
         grid-template-rows: 30% 70%;
@@ -424,14 +567,14 @@
         grid-template-rows: 40% 60%;
         grid-template-areas: 
         
-            'cardSection'
+            'index-card-section'
             'circleSection';
 
         ;
 
     }
 
-    .card-section{
+    .index-card-section{
 
         width: 100vw;
         display: flex;
@@ -484,6 +627,79 @@
         width: 20vw;
         height: 80%;
         font-size: 0.7em;
+
+    }
+
+
+    /*********** EDUCATION PAGE ***********/
+
+    .education-main-body-part{
+
+        height: 100%;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: 
+        
+            'logo-section'
+            'education-card-section'
+        
+        ;
+
+    }
+
+    .logo-section{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        
+            'diu-logo sjhss-logo fbic-logo'
+
+        ;
+        place-items: center;
+        width: 100vw;
+
+    }
+
+    .diu-logo{
+
+        width: 60%;
+
+    }
+
+    .sjhss-logo{
+
+        width: 60%;
+
+    }
+
+    .fbic-logo{
+
+        width: 60%;
+
+    }
+
+    .education-card-section{
+
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        
+            'diu-card'
+            'sjhss-card'
+            'fbic-card'
+        
+        ;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+    .common-card{
+
+        width: 100%;
+        font-size: 0.8em;
+        padding: 0em;
 
     }
 
