@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
+
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Portfolio</title>
+        <title>SRS PORTFOLIO</title>
 
-        <meta name="description" content="Portfolio">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+        <meta name="description" content="SRS Portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/shared/shared.css">
+        <link rel="stylesheet" href="assets/css/index/page.css">
+        <link rel="stylesheet" href="assets/css/index/responsive.css">
 
-        <link rel="stylesheet" href="Styles/nav.css">
-        <link rel="stylesheet" href="Styles/footer.css">
-        <link rel="stylesheet" href="Styles/navFootResponsive.css">
-        <link rel="stylesheet" href="Styles/indexResponsive.css">
-        <link rel="stylesheet" href="Styles/home.css">
-        <link rel="stylesheet" href="Styles/body.css">
-    
     </head>
 
     <body>
-        
+
         <header>
 
-            <nav class="navigation-bar">
+            <nav class="nav-bar">
 
-                <nav class="title-text">
+                <nav class="nav-bar-left">
 
                     <h3>SRS PORTFOLIO</h3>
 
                 </nav>
 
-                <nav class="navigation-content">
+                <nav class="nav-bar-right">
 
-                    <button class="home-button">HOME</button>
-                    <button class="project-button">PROJECTS</button>
+                    <a class="home link-tag-decoration nav-bar-right-button" href="#">HOME</a>
+                    <a class="projects link-tag-decoration nav-bar-right-button" href="#">PROJECTS</a>
 
-                    <nav class="nav-drop-down-container">
+                    <nav class="drop-down-container">
 
-                        <button id="drop-down-button">MORE</button>
-                        
-                        <nav class="nav-drop-down-content">
-                            <button class="about-button">ABOUT ME</button> <br>
-                            <button class="education-button" onclick="window.location.href='Pages/education.html'">EDUCATION</button> <br>
-                            <button class="skill-button">SKILLS</button> <br>
-                            <button class="achievement-button">ACHIEVEMENTS</button>
+                        <a class="more link-tag-decoration" href="#">MORE</a>
+
+                        <nav class="drop-down-content">
+
+                            <a class="about-me link-tag-decoration drop-down-content-button" href="#">ABOUT ME</a>
+                            <a class="education link-tag-decoration drop-down-content-button" href="assets/modules/education.html">EDUCATION</a>
+                            <a class="skills link-tag-decoration drop-down-content-button" href="#">SKILLS</a>
+                            <a class="achievements link-tag-decoration drop-down-content-button" href="#">ACHIEVEMENTS</a>
+
                         </nav>
 
                     </nav>
-                    
 
                 </nav>
 
@@ -60,61 +58,54 @@
 
         </header>
 
+
         <main>
 
-            <section class="main-section">
+            <section class="main-body-part">
 
-                <section class="profile-section">
+                <section class="profile-picture-section">
 
-                    <img class="profile-picture" src="Images/Profile.png" title="Sunny" alt="Profile Picture Failed To Load">
+                    <img class="profile-picture" src="assets/images/Profile.png" title="SRS" alt="SRS Logo Failed To Load">
 
                 </section>
 
                 <section class="details-section">
 
-                    <section class="main-title-section">
+                    <section class="title-section">
 
-                        <h3>SIAMUR RAHMAN SUNNY</h3>
+                        <h3 class="title-section-title">SIAMUR RAHMAN SUNNY</h3>
 
                     </section>
 
-                    <section class="sub-details-section">
+                    <section class="main-details-section">
 
-                        <section class="about-card">
+                        <section class="card-section">
 
                             <section class="card">
 
-                                <p>A Passionate and dedicated second-year Computer Science student</p>
+                                <p>A passionate and dedicated second-year Computer Science student</p>
 
                             </section>
 
                         </section>
 
-                        <section class="extra-card">
+                        <section class="circle-section">
 
-                            <section class="first-circle-section">
+                            <section class="first-circle">
 
-                                <section class="first-circle">
-
-                                    <h3>5+ Project</h3>
-
-                                </section>
+                                <p>5+ Project</p>
 
                             </section>
 
-                            <section class="remaining-circle-section">
+                            <section class="second-circle">
 
-                                <section class="second-circle">
+                                <p>5+ Skill</p>
 
-                                    <h3>5+ Skill</h3>
+                            </section>
 
-                                </section>
+                            <section class="third-circle">
 
-                                <section class="third-circle">
-
-                                    <h3>CGPA: 3.94</h3>
-
-                                </section>
+                                <p>CGPA: 3.94</p>
 
                             </section>
 
@@ -128,29 +119,30 @@
 
         </main>
 
+
         <footer>
 
-            <nav class="navigation-bar">
+            <nav class="nav-bar foot-bar">
 
-                <nav class="title-text footer-text">
+                <nav class="nav-bar-left foot-bar-left">
 
-                    <h3>&copy; Siamur Rahman Sunny - 2026</h3>
+                    <h3>&copy; SIAMUR RAHMAN SUNNY - 2026</h3>
 
                 </nav>
 
-                <nav class="navigation-content footer-content">
+                <nav class="nav-bar-right foot-bar-right">
 
-                    <a><img class="linkedin-img" src="Images/LinkedIn.png" alt="LinkedIn" title="LinkedIn" width="100px" height="100px"></a>
-                    <a><img src="Images/Github.png" alt="Github" title="Github" width="60px" height="60px"></a>
-                    <a><img src="Images/Gmail.png" alt="Gmail" title="Gmail" width="60px" height="60px"></a>
-                    <a><img src="Images/Phone.png" alt="+880-1345859610" title="Phone" width="60px" height="60px"></a>
+                    <a class="linkedin link-tag-decoration" href="https://www.linkedin.com/in/iamsrs2003/" target="_blank"><img class="linkedin-icon" src="assets/images/LinkedIn.png" title="LinkedIn" alt="LinkedIn"></a>
+                    <a class="github link-tag-decoration" href="https://github.com/SRSunny023" target="_blank"><img class="github-icon" src="assets/images/Github.png" title="Github" alt="Github"></a>
+                    <a class="gmail link-tag-decoration" href="https://mail.google.com/mail/?view=cm&to=srsunny023@gmail.com" target="_blank"><img class="gmail-icon" src="assets/images/Gmail.png" title="srsunny023@gmail.com" alt="srsunny023@gmail.com"></a>
+                    <a class="phone link-tag-decoration" href="https://wa.me/8801571064348" target="_blank"><img class="phone-icon" src="assets/images/Phone.png" title="+8801571064348" alt="+8801571064348"></a>
 
                 </nav>
 
             </nav>
 
         </footer>
-        
+
     </body>
 
 </html>
