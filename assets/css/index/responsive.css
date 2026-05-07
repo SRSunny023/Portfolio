@@ -58,7 +58,7 @@
         grid-template-columns: 30% 70%;
         grid-template-areas: 
         
-            'profilePicture details'
+            'profile-picture details'
 
         ;
 
@@ -108,29 +108,35 @@
         grid-template-columns: auto auto auto;
         grid-template-areas: 
         
-            'diu-logo diu-logo'
-            'sjhss-logo fbic-logo'
+            'education-logo education-logo'
+            'cloud-logo thunder-logo'
 
         ;
         place-items: center;
 
     }
 
-    .diu-logo{
+    .education-logo{
 
-        width: 35%;
-
-    }
-
-    .sjhss-logo{
-
-        width: 60%;
+        transform: scale(0.7);
 
     }
 
-    .fbic-logo{
+    .education-logo:hover{
 
-        width: 60%;
+        transform: scale(1);
+
+    }
+
+    .common-logo-property{
+
+        transform: scale(0.8);
+
+    }
+
+    .common-logo-property:hover{
+
+        transform: scale(1.1);
 
     }
 
@@ -219,7 +225,7 @@
         grid-template-rows: 20% 80%;
         grid-template-areas: 
         
-            'profilePicture'
+            'profile-picture'
             'details'
 
         ;
@@ -233,8 +239,8 @@
         grid-template-rows: 5% 95%;
         grid-template-areas: 
         
-            'titleSection'
-            'mainDetailsSection'
+            'title-section'
+            'main-details-section'
 
         ;
 
@@ -268,7 +274,7 @@
         grid-template-areas: 
         
             'index-card-section'
-            'circleSection';
+            'circle-section';
 
         ;
 
@@ -286,8 +292,8 @@
 
         grid-template-areas: 
         
-            'firstCircle firstCircle'
-            'secondCircle thirdCircle'
+            'first-circle first-circle'
+            'second-circle third-circle'
         
         ;
         
@@ -351,7 +357,7 @@
         grid-template-columns: auto auto auto;
         grid-template-areas:
         
-            'diu-logo sjhss-logo fbic-logo'
+            'education-logo cloud-logo thunder-logo'
 
         ;
         place-items: center;
@@ -359,21 +365,27 @@
 
     }
 
-    .diu-logo{
+    .education-logo{
 
-        width: 50%;
-
-    }
-
-    .sjhss-logo{
-
-        width: 50%;
+        transform: scale(0.7);
 
     }
 
-    .fbic-logo{
+    .education-logo:hover{
 
-        width: 50%;
+        transform: scale(1);
+
+    }
+
+    .common-logo-property{
+
+        transform: scale(0.4);
+
+    }
+
+    .common-logo-property:hover{
+
+        transform: scale(0.6);
 
     }
 
@@ -416,7 +428,7 @@
         grid-template-columns: 30% 70%;
         grid-template-areas: 
         
-            'navLeft navRight'
+            'navigation-bar-left navigation-bar-right'
 
         ;
 
@@ -442,7 +454,7 @@
         grid-template-columns: auto auto auto;
         grid-template-areas:
         
-            'home projects dropDownContainer'
+            'home projects drop-down-container'
 
         ;
         place-items: center;
@@ -454,11 +466,6 @@
     .foot-bar-right{
 
         grid-template-columns: auto auto auto auto;
-        grid-template-areas:
-        
-            'linkedin github gmail phone'
-
-        ;
 
     }
 
@@ -468,9 +475,9 @@
         grid-template-rows: 60px 1fr 60px;
         grid-template-areas: 
         
-            'navBar'
-            'mbPart'
-            'footBar'
+            'navigation-bar'
+            'main-body-part'
+            'footer-bar'
 
         ;
 
@@ -511,7 +518,7 @@
         grid-template-rows: 30% 70%;
         grid-template-areas: 
         
-            'profilePicture'
+            'profile-picture'
             'details'
 
         ;
@@ -525,8 +532,8 @@
         grid-template-rows: 10% 90%;
         grid-template-areas: 
         
-            'titleSection'
-            'mainDetailsSection'
+            'title-section'
+            'main-details-section'
 
         ;
 
@@ -568,7 +575,7 @@
         grid-template-areas: 
         
             'index-card-section'
-            'circleSection';
+            'circle-section';
 
         ;
 
@@ -586,9 +593,9 @@
 
         grid-template-areas: 
         
-            'firstCircle'
-            'secondCircle'
-            'thirdCircle'
+            'first-circle'
+            'second-circle'
+            'third-circle'
         
         ;
         
@@ -653,7 +660,7 @@
         grid-template-columns: auto auto auto;
         grid-template-areas:
         
-            'diu-logo sjhss-logo fbic-logo'
+            'education-logo cloud-logo thunder-logo'
 
         ;
         place-items: center;
@@ -661,21 +668,27 @@
 
     }
 
-    .diu-logo{
+    .education-logo{
 
-        width: 60%;
-
-    }
-
-    .sjhss-logo{
-
-        width: 60%;
+        transform: scale(1.5);
 
     }
 
-    .fbic-logo{
+    .education-logo:hover{
 
-        width: 60%;
+        transform: scale(1.8);
+
+    }
+
+    .common-logo-property{
+
+        transform: scale(0.8);
+
+    }
+
+    .common-logo-property:hover{
+
+        transform: scale(1.1);
 
     }
 

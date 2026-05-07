@@ -14,9 +14,9 @@ body{
     grid-template-rows: 80px 1fr 80px;
     grid-template-areas: 
     
-        'navBar'
-        'mbPart'
-        'footBar'
+        'navigation-bar'
+        'main-body-part'
+        'footer-bar'
 
     ;
 
@@ -28,11 +28,11 @@ body{
     width: 100%;
     height: 80px;
     display: grid;
-    grid-area: navBar;
+    grid-area: navigation-bar;
     grid-template-columns: 40% 60%;
     grid-template-areas: 
     
-        'navLeft navRight'
+        'navigation-bar-left navigation-bar-right'
 
     ;
 
@@ -40,7 +40,7 @@ body{
 
 .nav-bar-left{ 
     
-    grid-area: navLeft;
+    grid-area: navigation-bar-left;
     display: grid;
     place-items: center;
     font-size: 2.5em;
@@ -57,12 +57,12 @@ body{
 
 .nav-bar-right{
 
-    grid-area: navRight;
+    grid-area: navigation-bar-right;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-areas: 
     
-        'home projects dropDownContainer'
+        'home projects drop-down-container'
 
     ;
     place-items: center;
@@ -74,11 +74,6 @@ body{
 .foot-bar-right{
 
     grid-template-columns: auto auto auto auto;
-    grid-template-areas: 
-    
-        'linkedin github gmail phone'
-
-    ;
 
 }
 
@@ -98,22 +93,10 @@ body{
 .more{
     grid-area: more;
 }
-.linkedin{
-    grid-area: linkedin;
-}
-.github{
-    grid-area: github;
-}
-.gmail{
-    grid-area: gmail;
-}
-.phone{
-    grid-area: phone;
-}
 
 .foot-bar{
     
-    grid-area: footBar;
+    grid-area: footer-bar;
 
 }
 
@@ -125,7 +108,7 @@ body{
 
 .drop-down-container{
 
-    grid-area: dropDownContainer;
+    grid-area: drop-down-container;
     position: relative;
     display: grid;
     height: 100%;
@@ -135,13 +118,14 @@ body{
 
 .drop-down-content{
 
+    z-index: 9999;
     position: absolute;
     background-color: #024dae;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     
-        'aboutMe'
+        'about-me'
         'education'
         'skills'
         'achievements'
@@ -182,7 +166,7 @@ body{
 
 .about-me{
 
-    grid-area: aboutMe;
+    grid-area: about-me;
 
 }
 
@@ -210,53 +194,14 @@ body{
 
 }
 
-.linkedin-icon{
+.common-icon-property{
 
-    width: 2.3em;
     transition: transfrom 1s ease;
+    color: #21045c;    
 
 }
 
-.linkedin-icon:hover{
-
-    transform: scale(1.4);
-
-}
-
-.github-icon{
-
-    width: 1.6em;
-    transition: transfrom 1s ease;
-
-}
-
-.github-icon:hover{
-
-    transform: scale(1.2);
-
-}
-
-.gmail-icon{
-
-    width: 1.6em;
-    transition: transfrom 1s ease;
-
-}
-
-.gmail-icon:hover{
-
-    transform: scale(1.2);
-
-}
-
-.phone-icon{
-
-    width: 1.6em;
-    transition: transfrom 1s ease;
-
-}
-
-.phone-icon:hover{
+.common-icon-property:hover{
 
     transform: scale(1.2);
 
