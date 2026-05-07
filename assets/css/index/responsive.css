@@ -162,6 +162,115 @@
 
     }
 
+
+    /*********** ACHIEVEMENTS PAGE ***********/
+
+    .achievements-main-body-part{
+
+        grid-template-rows: auto auto;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        
+            'award-photo-section problem-solving-section'
+            'award-details-section problem-solving-section'
+        
+        ;
+
+    }
+
+    .award-photo-section{
+
+        grid-area: award-photo-section;
+        display: grid;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+        
+            'award-photo-title'
+            'takeoff-award'
+        
+        ;
+        place-items: center;
+
+    }
+
+    .award-details-section{
+
+        grid-area: award-details-section;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        
+            'takeoff-preli-award'
+            'takeoff-final-award'
+            'icsc-qualification-award'
+
+        ;
+        place-items: center;
+        cursor: default;
+
+    }
+
+    .problem-solving-section{
+
+        grid-area: problem-solving-section;
+        display: grid;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+        
+            'problem-solving-title-section'
+            'problem-solving-graph-section'
+
+        ;
+        place-items: center;
+
+    }
+
+    .takeoff-award{
+
+        width: 19%;
+        transform: scaleX(1.7);
+
+    }
+
+    .takeoff-award:hover{
+
+        transform: scaleX(1.8);
+
+    }
+
+    .award-photo-title:hover{
+
+        transform: scale(1.5);
+
+    }
+
+    .common-award-card{
+
+        border-radius: 10px 10px 10px 10px;
+        height: 90%;
+        width: 90%;
+
+    }
+
+    .common-award-card:hover{
+
+        transform: scale(1.1);
+        background-color: #017eb4;
+
+    }
+
+    .problem-solving-title-section{
+
+        grid-area: problem-solving-title-section;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        cursor: default;
+
+    }
+
 }
 
 
@@ -410,6 +519,77 @@
         width: 100%;
         font-size: 1.5em;
         padding: 0em;
+
+    }
+
+
+    /*********** ACHIEVEMENTS PAGE ***********/
+
+    .achievements-main-body-part{
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        
+            'award-photo-section award-details-section'
+            'problem-solving-section problem-solving-section'
+        
+        ;
+
+    }
+
+    .award-photo-section{
+
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .award-details-section{
+
+        width: 100%;
+
+    }
+
+    .problem-solving-section{
+
+        width: 100%;
+
+    }
+
+    .takeoff-award{
+
+        width: 10%;
+        transform: scaleX(12);
+        height: 100%;
+
+    }
+
+    .takeoff-award:hover{
+
+        transform: scaleX(13);
+
+    }
+
+    .award-photo-title:hover{
+
+        transform: scale(1.5);
+
+    }
+
+    .common-award-card{
+
+        border-radius: 20px 20px 20px 20px;
+        height: 70%;
+        font-size: 1.5rem;
+        padding: 0rem;
+        width: 80%;
+
+    }
+
+    .common-problem-solved{
+
+        grid-template-rows: 20% 75%;
 
     }
 
@@ -713,6 +893,96 @@
         width: 100%;
         font-size: 0.8em;
         padding: 0em;
+
+    }
+
+
+    /*********** ACHIEVEMENTS PAGE ***********/
+
+    .achievements-main-body-part{
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        
+            'award-photo-section award-details-section'
+            'problem-solving-section problem-solving-section'
+        
+        ;
+
+    }
+
+    .award-photo-section{
+
+        justify-content: center;
+        width: 50vw;
+
+    }
+
+    .award-details-section{
+
+        width: 50vw;
+
+    }
+
+    .problem-solving-section{
+
+        width: 100vw;
+
+    }
+
+    .takeoff-award{
+
+        width: 30%;
+        transform: scaleX(2.5);
+        height: 90%;
+
+    }
+
+    .takeoff-award:hover{
+
+        transform: scaleX(4.2);
+
+    }
+
+    .award-photo-title{
+
+        font-size: 1rem;
+
+    }
+
+    .award-photo-title:hover{
+
+        transform: scale(1.2);
+
+    }
+
+    .common-award-card{
+
+        border-radius: 10px 10px 10px 10px;
+        height: 70%;
+        font-size: 0.8rem;
+        padding: 0rem;
+
+    }
+
+    .common-award-card:hover{
+
+        transform: scale(1.1);
+
+    }
+
+    .problem-solving-title{
+
+        font-size: 1rem;
+
+    }
+
+    .common-problem-solved{
+
+        font-size: 0.8rem;
+        grid-template-rows: 30% 65%;
+        border-radius: 10px 10px 0px 0px;
 
     }
 
