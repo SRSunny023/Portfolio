@@ -6,7 +6,7 @@
     grid-template-columns: 40% 60%;
     grid-template-areas: 
     
-        'profilePicture details'
+        'profile-picture details'
 
     ;
 
@@ -14,7 +14,7 @@
 
 .profile-picture-section{
 
-    grid-area: profilePicture;
+    grid-area: profile-picture;
     display: grid;
     place-items: center;
 
@@ -27,8 +27,8 @@
     grid-template-rows: 20% 80%;
     grid-template-areas: 
     
-        'titleSection'
-        'mainDetailsSection'
+        'title-section'
+        'main-details-section'
 
     ;
 
@@ -57,7 +57,7 @@
 
 .title-section{
 
-    grid-area: titleSection;
+    grid-area: title-section;
     display: grid;
     place-items: center;
     font-size: 3em;
@@ -81,12 +81,12 @@
 
 .main-details-section{
 
-    grid-area: mainDetailsSection;
+    grid-area: main-details-section;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas: 
     
-        'index-card-section circleSection';
+        'index-card-section circle-section';
 
     ;
 
@@ -102,12 +102,12 @@
 
 .circle-section{
 
-    grid-area: circleSection;
+    grid-area: circle-section;
     display: grid;
     grid-template-areas: 
     
-        'firstCircle firstCircle'
-        'secondCircle thirdCircle'
+        'first-circle first-circle'
+        'second-circle third-circle'
     
     ;
 
@@ -144,7 +144,7 @@
 .first-circle{
 
     background-color: #ffbd59;
-    grid-area: firstCircle;
+    grid-area: first-circle;
     border-radius: 50%;
     width: 35%;
     height: 70%;
@@ -170,7 +170,7 @@
 .second-circle{
 
     background-color: #ffbd59;
-    grid-area: secondCircle;
+    grid-area: second-circle;
     border-radius: 50%;
     width: 75%;
     height: 70%;
@@ -196,7 +196,7 @@
 .third-circle{
 
     background-color: #ffbd59;
-    grid-area: thirdCircle;
+    grid-area: third-circle;
     border-radius: 50%;
     width: 65%;
     height: 70%;
