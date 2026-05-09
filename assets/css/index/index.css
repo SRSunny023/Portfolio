@@ -662,3 +662,39 @@ p.finishing-section-footer-email-text {
     margin-left: -50%;
 }
 /******* FINISHING SECTION *******/
+
+
+
+
+
+
+
+img.common-project-gallery {
+    width: 50%;
+}
+
+section.project-section-gallery-part {
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+
+section.project-gallery-sliding-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+}
+
+section.project-section-gallery-part::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
