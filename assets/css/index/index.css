@@ -75,6 +75,7 @@ img.about-me-logo {
 
 img.common-logo-property {
     width: 3vw;
+    margin-left: 30%;
 }
 
 p.about-me-title {
@@ -99,6 +100,41 @@ section.project-section {
     height: 98%;
     border-radius: 40px;
     width: 98%;
+    color: white;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
+    place-items: center;
+}
+
+section.project-section-header-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-size: 1.5em;
+}
+
+p.project-section-header-1-text {
+    color: #d3d2d2;
+}
+
+img.project-section-logo {
+    width: 3vw;
+}
+
+section.project-section-header-2 {
+    font-size: 1.8em;
+}
+
+section.project-section-footer-button {
+    background-color: #936cea;
+    font-size: 1.9em;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+a.project-section-button {
+    text-decoration: none;
+    color: white;
 }
 /******* PROJECT SECTION *******/
 
@@ -363,6 +399,57 @@ section.achievements-section {
     height: 98%;
     border-radius: 40px;
     width: 98%;
+    color: white;
+    font-size: 1.3em;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+}
+
+section.achievements-section-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+p.achievements-section-header-text {
+    margin-left: -80%;
+    font-size: 1.2em;
+    color: #d3d2d2;
+}
+
+img.achievements-section-logo {
+    margin-left: 40%;
+}
+
+section.common-award {
+    background-color: #181818;
+    text-align: center;
+    border-radius: 40px;
+}
+
+section.achievements-section-middle-part {
+    display: grid;
+    place-content: space-evenly;
+    font-size: 1.4em;
+}
+
+section.achievements-section-footer {
+    display: grid;
+    place-items: center;
+}
+
+section.view-awards-section {
+    background-color: #936cea;
+    width: 50%;
+    font-size: 1.6em;
+    padding: 0.3em;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a.view-awards-button {
+    text-decoration: none;
+    color: white;
 }
 /******* ACHIEVEMENT SECTION *******/
 
