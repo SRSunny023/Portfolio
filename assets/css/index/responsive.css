@@ -1,3 +1,4 @@
+/******* 1440PX AND DOWN SECTION *******/
 @media screen and (max-width: 1440px) {
 
     /******* ABOUT ME SECTION *******/
@@ -6,8 +7,6 @@
         font-size: 1em;
     }
     /******* ABOUT ME SECTION *******/
-
-
 
 
 
@@ -27,10 +26,6 @@
     /******* PROJECT SECTION *******/
 
 
-
-
-
-
     /******* EDUCATION SECTION *******/
     section.education-section {
         font-size: 1.4em;
@@ -40,7 +35,6 @@
         padding: 0.2em;
     }
     /******* EDUCATION SECTION *******/
-
 
 
 
@@ -81,13 +75,11 @@
 
 
 
-
     /******* PROBLEM SOLVING SECTION *******/
     section.problem-solving-title-section {
         font-size: 1.2em;
     }
     /******* PROBLEM SOLVING SECTION *******/
-
 
 
 
@@ -108,8 +100,6 @@
 
 
 
-
-
     /******* CONTACT SECTION *******/
     section.contact-title-section {
         font-size: 1.5em;
@@ -122,13 +112,11 @@
 
 
 
-
     /******* SKILLS SECTION *******/
     section.skills-section-footer {
         font-size: 1.3em;
     }
     /******* SKILLS SECTION *******/
-
 
 
 
@@ -158,3 +146,182 @@
     }
     /******* FINISHING SECTION *******/
 }
+/******* 1440PX AND DOWN SECTION *******/
+
+
+
+/******* 1024PX AND DOWN SECTION *******/
+@media screen and (max-width: 1024px) {
+
+    /******* ABOUT ME SECTION *******/
+    section.about-me-section {
+        font-size: 0.8em;
+    }
+    /******* ABOUT ME SECTION *******/
+
+
+
+    /******* PROJECT SECTION *******/
+    section.project-section-header-1 {
+        font-size: 0.8em;
+    }
+
+    section.project-section-header-2 {
+        font-size: 1em;
+    }
+
+    section.project-section-footer-button {
+        font-size: 1em;
+    }
+
+    section.project-gallery-sliding-container {
+        gap: 0.6em;
+        padding-right: 0em;
+    }
+    /******* PROJECT SECTION *******/
+
+
+
+    /******* EDUCATION SECTION *******/
+    section.education-section {
+        font-size: 0.8em;
+    }
+
+    section.education-button-section {
+        padding: 0.2em;
+    }
+    /******* EDUCATION SECTION *******/
+
+
+
+    /******* INTRO CARD SECTION *******/
+    p.common-card-text {
+        font-size: 2em;
+    }
+
+    p.common-card-footer-text {
+        font-size: 0.8em;
+    }
+
+    img.common-card-logo-property {
+        width: 1em;
+    }
+    /******* INTRO CARD SECTION *******/
+
+
+
+    /******* PROFILE SECTION *******/
+    p.middle-part-text {
+        font-size: 0.7em;
+    }
+
+    section.footer-part {
+        font-size: 0.6em;
+    }
+
+    section.profile-picture-details-part {
+        font-size: 0.7em;
+    }
+
+    section.resume-part {
+        font-size: 0.7em;
+    }
+
+    section.common-footer-left-right-part {
+        height: 60%;
+    }
+    /******* PROFILE SECTION *******/
+
+
+
+    /******* PROBLEM SOLVING SECTION *******/
+    section.problem-solving-title-section {
+        font-size: 1em;
+    }
+
+    section.problem-solving-graph-section {
+        font-size: 0.6em;
+    }
+    /******* PROBLEM SOLVING SECTION *******/
+
+
+
+    /******* ACHIEVEMENT SECTION *******/
+    section.achievements-section {
+        font-size: 0.6em;
+    }
+
+    section.achievements-section-middle-part {
+        font-size: 1em;
+    }
+
+    section.view-awards-section {
+        font-size: 1.2em;
+    }
+    /******* ACHIEVEMENT SECTION *******/
+
+
+
+    /******* CONTACT SECTION *******/
+    section.contact-logo-section {
+        font-size: 1em;
+    }
+
+    section.contact-title-section {
+        font-size: 1em;
+    }
+
+    section.contact-details-section {
+        font-size: 0.8em;
+    }
+    /******* CONTACT SECTION *******/
+
+
+
+    /******* SKILLS SECTION *******/
+    section.skills-section-header {
+        font-size: 1em;
+    }
+
+    section.skills-section-footer {
+        font-size: 0.8em;
+    }
+    /******* SKILLS SECTION *******/
+
+
+
+    /******* FINISHING SECTION *******/
+    section.finishing-section-header-circle {
+        height: 40%;
+    }
+
+    h3.finishing-section-middle-title {
+        font-size: 0.8em;
+    }
+
+    p.finishing-section-middle-footer {
+        font-size: 0.5em;
+    }
+
+    section.finishing-section-footer-email {
+        font-size: 0.7em;
+    }
+
+    section.finishing-section-footer-schedule-call {
+        font-size: 0.7em;
+    }
+
+    p.finishing-section-footer-call-text {
+        margin-left: -30%;
+    }
+    /******* FINISHING SECTION *******/
+}
+/******* 1024PX AND DOWN SECTION *******/
+
+
+
+/******* 600PX AND DOWN SECTION *******/
+@media screen and (max-width: 600px) {
+    
+}
+/******* 600PX AND DOWN SECTION *******/
