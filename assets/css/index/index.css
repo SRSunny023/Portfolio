@@ -11,12 +11,16 @@
 
 
 /******* BODY SECTION *******/
+body {
+    background-color: black;
+}
+
 section.main-body-section {
     background-color: black;
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-columns: repeat(4, auto);
     grid-template-areas:
         'col-1 col-2 col-3 col-4';
 }
@@ -24,25 +28,25 @@ section.main-body-section {
 section.about-project-education-section {
     grid-area: col-1;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.intro-card-profile-problem-solving-section {
     grid-area: col-2;
     display: grid;
-    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.achievements-contact-section {
     grid-area: col-3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
 }
 
 section.skills-finishing-section {
     grid-area: col-4;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
 }
 /******* BODY SECTION *******/
 
@@ -57,8 +61,8 @@ section.about-me-section {
     font-size: 1.6em;
     color: white;
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
     grid-template-areas:
         'amt-col-1 amt-col-2'
         'amt-row amt-row';
@@ -75,14 +79,14 @@ img.about-me-logo {
 
 img.common-logo-property {
     width: 3vw;
-    margin-left: 30%;
+    justify-self: right;
 }
 
 p.about-me-title {
     grid-area: amt-col-2;
     height: min-content;
-    margin-left: -8em;
     color: #d3d2d2;
+    justify-self: left;
 }
 
 p.about-me {
@@ -108,7 +112,7 @@ section.project-section {
 
 section.project-section-header-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     place-items: center;
     font-size: 1.5em;
 }
@@ -136,6 +140,36 @@ a.project-section-button {
     text-decoration: none;
     color: white;
 }
+
+img.common-project-gallery {
+    width: 50%;
+}
+
+section.project-section-gallery-part {
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+
+section.project-gallery-sliding-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+}
+
+section.project-section-gallery-part::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
 /******* PROJECT SECTION *******/
 
 
@@ -151,8 +185,8 @@ section.education-section {
     padding: 0.4em;
     font-size: 1.6em;
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     grid-template-areas:
         'edu-col-1 edu-col-2'
         'edu-row-1 edu-row-1'
@@ -167,8 +201,8 @@ img.education-logo {
 
 p.education-title {
     grid-area: edu-col-2;
-    margin-left: -8em;
     color: #d3d2d2;
+    justify-self: left;
 }
 
 p.education {
@@ -195,7 +229,7 @@ section.education-button-section {
 /******* INTRO CARD SECTION *******/
 section.intro-card-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
     color: white;
     column-gap: 1%;
 }
@@ -249,13 +283,14 @@ img.common-card-logo-property {
 /******* PROFILE SECTION *******/
 section.profile-section {
     display: grid;
-    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.middle-part {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    place-items: self-start;
     color: white;
     place-content: center;
     background-color: black;
@@ -264,25 +299,24 @@ section.middle-part {
 
 section.common-middle-part {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     border-radius: 20px;
-    margin-top: 5%;
 }
 
 p.middle-part-text {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 section.heading-part {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
 }
 
 section.footer-part {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     color: white;
-    font-size: 1.4em;
+    font-size: 1.5em;
     place-items: center;
 }
 
@@ -295,7 +329,7 @@ section.profile-picture-details-part {
     display: grid;
     align-items: center;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.6em;
 }
 
 span.profile-picture-details-bio-2 {
@@ -307,7 +341,7 @@ section.resume-part {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     font-size: 1.4em;
 }
 
@@ -325,8 +359,7 @@ img.common-middle-logo-part {
 }
 
 img.profile-picture {
-    width: 50%;
-    transform: scale(1.3);
+    width: 60%;
     border-radius: 30px;
     background-color: #936cea;
 }
@@ -348,7 +381,7 @@ section.problem-solving-section {
 section.problem-solving-title-section {
     display: grid;
     place-items: center;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 section.problem-solving-graph-section {
@@ -402,23 +435,23 @@ section.achievements-section {
     color: white;
     font-size: 1.3em;
     display: grid;
-    grid-template-rows: 0.3fr 1fr 0.3fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.achievements-section-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     place-items: center;
 }
 
 p.achievements-section-header-text {
-    margin-left: -80%;
+    justify-self: left;
     font-size: 1.2em;
     color: #d3d2d2;
 }
 
 img.achievements-section-logo {
-    margin-left: 40%;
+    justify-self: right;
 }
 
 section.common-award {
@@ -441,7 +474,7 @@ section.achievements-section-footer {
 section.view-awards-section {
     background-color: #936cea;
     width: 50%;
-    font-size: 1.6em;
+    font-size: 1.7em;
     padding: 0.3em;
     border-radius: 20px;
     text-align: center;
@@ -469,18 +502,18 @@ section.contact-section {
 
 section.contact-logo-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     place-items: center;
     font-size: 1.3em;
 }
 
 p.contact-logo-section-title {
-    margin-left: -90%;
+    justify-self: left;
     color: #d3d2d2;
 }
 
 img.contact-logo {
-    margin-left: 40%;
+    justify-self: right;
 }
 
 section.contact-title-section {
@@ -492,7 +525,7 @@ section.contact-title-section {
 section.contact-details-section {
     display: grid;
     place-items: center;
-    font-size: 1.7em;
+    font-size: 1.9em;
 }
 
 section.contact-details-facebook {
@@ -548,23 +581,23 @@ section.skills-section {
 
 section.skills-section-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, auto);
     place-items: center;
     font-size: 1.5em;
 }
 
 p.skills-section-header-title {
     color: #d3d2d2;
-    margin-left: -80%;
+    justify-self: left;
 }
 
 img.skills-section-header-logo {
-    margin-left: 70%;
+    justify-self: right;
 }
 
 section.skills-section-footer {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
     font-size: 1.6em;
     place-items: center;
 }
@@ -594,7 +627,7 @@ section.finishing-section {
     width: 98%;
     color: white;
     display: grid;
-    grid-template-rows: 1fr 0.5fr 1.5fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 section.finishing-section-header {
@@ -605,14 +638,14 @@ section.finishing-section-header {
 section.finishing-section-header-circle {
     background-color: #181818;
     width: 30%;
-    height: 80%;
+    height: 50%;
     border-radius: 50%;
     display: grid;
     place-items: center;
 }
 
 img.finishing-section-logo {
-    width: 5vw;
+    width: 3.7vw;
 }
 
 section.finishing-section-middle {
@@ -662,39 +695,3 @@ p.finishing-section-footer-email-text {
     margin-left: -50%;
 }
 /******* FINISHING SECTION *******/
-
-
-
-
-
-
-
-img.common-project-gallery {
-    width: 50%;
-}
-
-section.project-section-gallery-part {
-    height: 100%;
-    overflow-x: auto;
-    display: flex;
-}
-
-section.project-gallery-sliding-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: spin 5s infinite linear;
-    padding-right: 1em;
-}
-
-section.project-section-gallery-part::-webkit-scrollbar {
-    display: none;
-}
-
-
-@keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
-}
