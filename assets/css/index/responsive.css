@@ -322,58 +322,10 @@
 
 /******* 600PX AND DOWN SECTION *******/
 @media screen and (max-width: 600px) {
-        /******* UNIVERSAL SECTION *******/
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /******* UNIVERSAL SECTION *******/
-
-
-
-
-
     /******* BODY SECTION *******/
-    body {
-        background-color: black;
-    }
-
     section.main-body-section {
-        background-color: black;
-        width: 100vw;
-        height: 100vh;
-        display: grid;
         grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            'col-2'
-            'col-1'
-            'col-3'
-            'col-4';
-    }
-
-    section.about-project-education-section {
-        grid-area: col-1;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    section.intro-card-profile-problem-solving-section {
-        grid-area: col-2;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    section.achievements-contact-section {
-        grid-area: col-3;
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-    }
-
-    section.skills-finishing-section {
-        grid-area: col-4;
-        display: grid;
-        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 'col-2' 'col-1' 'col-3' 'col-4';
     }
     /******* BODY SECTION *******/
 
@@ -384,41 +336,13 @@
 
     /******* ABOUT ME SECTION *******/
     section.about-me-section {
-        padding: 0.4em;
         font-size: 1em;
-        color: white;
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: repeat(2, auto);
-        grid-template-areas:
-            'amt-col-1 amt-col-2'
-            'amt-row amt-row';
-        place-items: center;
-        background-color: #101010;
         border-radius: 20px;
-        width: 98%;
-        height: 98%;
         margin-top: 5%;
-    }
-
-    img.about-me-logo {
-        grid-area: amt-col-1;
     }
 
     img.common-logo-property {
         width: 7vw;
-        justify-self: right;
-    }
-
-    p.about-me-title {
-        grid-area: amt-col-2;
-        height: min-content;
-        color: #d3d2d2;
-        justify-self: left;
-    }
-
-    p.about-me {
-        grid-area: amt-row;
     }
     /******* ABOUT ME SECTION *******/
 
@@ -428,26 +352,12 @@
 
     /******* PROJECT SECTION *******/
     section.project-section {
-        background-color: #101010;
-        height: 98%;
         border-radius: 20px;
-        width: 98%;
-        color: white;
-        display: grid;
-        grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
-        place-items: center;
         margin-top: 7%;
     }
 
     section.project-section-header-1 {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        place-items: center;
         font-size: 0.8em;
-    }
-
-    p.project-section-header-1-text {
-        color: #d3d2d2;
     }
 
     img.project-section-logo {
@@ -459,45 +369,15 @@
     }
 
     section.project-section-footer-button {
-        background-color: #936cea;
         font-size: 1em;
-        padding: 0.5em;
-        border-radius: 20px;
-    }
-
-    a.project-section-button {
-        text-decoration: none;
-        color: white;
     }
 
     img.common-project-gallery {
         width: 100%;
     }
 
-    section.project-section-gallery-part {
-        height: 100%;
-        overflow-x: auto;
-        display: flex;
-    }
-
     section.project-gallery-sliding-container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         gap: 0.5em;
-        animation: spin 5s infinite linear;
-        padding-right: 1em;
-    }
-
-    section.project-section-gallery-part::-webkit-scrollbar {
-        display: none;
-    }
-
-
-    @keyframes spin {
-        from {translate: 0;}
-        to {translate: -100%;}
     }
     /******* PROJECT SECTION *******/
 
@@ -508,48 +388,9 @@
 
     /******* EDUCATION SECTION *******/
     section.education-section {
-        background-color: #101010;
         border-radius: 20px;
-        color: white;
-        padding: 0.4em;
         font-size: 1.1em;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        grid-template-columns: repeat(2, auto);
-        grid-template-areas:
-            'edu-col-1 edu-col-2'
-            'edu-row-1 edu-row-1'
-            'edu-row-2 edu-row-2';
-        place-items: center;
-        width: 98%;
         margin-top: 8%;
-    }
-
-    img.education-logo {
-        grid-area: edu-col-1;
-    }
-
-    p.education-title {
-        grid-area: edu-col-2;
-        color: #d3d2d2;
-        justify-self: left;
-    }
-
-    p.education {
-        grid-area: edu-row-1;
-    }
-
-    a.education-button {
-        text-decoration: none;
-        color: white;
-        font-weight: normal;
-    }
-
-    section.education-button-section {
-        grid-area: edu-row-2;
-        background-color: #936cea;
-        padding: 0.5em;
-        border-radius: 20px;
     }
     /******* EDUCATION SECTION *******/
 
@@ -557,45 +398,20 @@
 
 
     /******* INTRO CARD SECTION *******/
-    section.intro-card-section {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        color: white;
-    }
-
     section.project-card {
-        background-color: #101010;
         border-radius: 20px;
-        display: grid;
-        place-items: center;
     }
 
     section.skill-card {
-        background-color: #101010;
         border-radius: 20px;
-        display: grid;
-        place-items: center;
     }
 
     section.cgpa-card {
-        background-color: #101010;
         border-radius: 20px;
-        display: grid;
-        place-items: center;
-        width: 98%;
     }
 
     p.common-card-text {
         font-size: 2.5em;
-    }
-
-    section.common-card-footer {
-        border: 1px solid gray;
-        width: 90%;
-        display: grid;
-        grid-template-columns: auto auto;
-        place-items: center;
-        border-radius: 20px;
     }
 
     p.common-card-footer-text {
@@ -611,89 +427,37 @@
 
     /******* PROFILE SECTION *******/
     section.profile-section {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
         margin-top: 5%;
     }
 
     section.middle-part {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: repeat(2, auto);
-        place-items: self-start;
-        color: white;
-        place-content: center;
-        background-color: black;
-        border-radius: 40px;
         margin-top: 5%;
-    }
-
-    section.common-middle-part {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        border-radius: 20px;
     }
 
     p.middle-part-text {
         font-size: 1em;
     }
 
-    section.heading-part {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }
-
     section.footer-part {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        color: white;
         font-size: 1.3em;
-        place-items: center;
         margin-top: 5%;
     }
 
-    section.profile-picture-part {
-        display: grid;
-        place-items: center;
-    }
-
     section.profile-picture-details-part {
-        display: grid;
-        align-items: center;
-        color: white;
         font-size: 1.1em;
     }
 
-    span.profile-picture-details-bio-2 {
-        color: #936cea;
-    }
-
     section.resume-part {
-        color: white;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(2, auto);
         font-size: 1em;
     }
 
     section.common-footer-left-right-part {
-        display: grid;
-        place-items: center;
-        background-color: #212020;
-        border-radius: 50px;
         height: 100%;
         width: 95%;
     }
 
     img.common-middle-logo-part {
         width: 10vw;
-    }
-
-    img.profile-picture {
-        width: 60%;
-        border-radius: 30px;
-        background-color: #936cea;
     }
     /******* PROFILE SECTION *******/
 
@@ -702,58 +466,17 @@
 
     /******* PROBLEM SOLVING SECTION *******/
     section.problem-solving-section {
-        background-color: #101010;
         border-radius: 20px;
-        color: white;
-        display: grid;
-        grid-template-rows: 0.2fr 1.8fr;
-        width: 98%;
         margin-top: 5%;
     }
 
     section.problem-solving-title-section {
-        display: grid;
-        place-items: center;
         font-size: 1.4em;
     }
 
     section.problem-solving-graph-section {
-        display: grid;
-        grid-template-columns: 0.5fr 1.5fr;
         font-size: 1em;
-        justify-content: space-between;
-        align-items: center;
-        line-height: 3;
         margin-top: 5%;
-    }
-
-    section.problem-solving-graph-title {
-        text-align: center;
-    }
-
-    section.common-problem-solving-graph {
-        border-radius: 0px 30px 30px 0px;
-        text-align: center;
-    }
-
-    section.leetcode-graph {
-        background-color: red;
-        width: 95%;
-    }
-
-    section.beecrowd-graph {
-        background-color: #00ff12;
-        width: 90%;
-    }
-
-    section.toph-graph {
-        background-color: #00acf6;
-        width: 75%;
-    }
-
-    section.codeforces-graph {
-        background-color: #ffbd59;
-        width: 70%;
     }
     /******* PROBLEM SOLVING SECTION *******/
 
@@ -762,62 +485,17 @@
 
     /******* ACHIEVEMENT SECTION *******/
     section.achievements-section {
-        background-color: #101010;
-        height: 98%;
         border-radius: 20px;
-        width: 98%;
-        color: white;
         font-size: 1em;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
         margin-top: 5%;
     }
 
-    section.achievements-section-header {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        place-items: center;
-    }
-
-    p.achievements-section-header-text {
-        justify-self: left;
-        font-size: 1.2em;
-        color: #d3d2d2;
-    }
-
-    img.achievements-section-logo {
-        justify-self: right;
-    }
-
-    section.common-award {
-        background-color: #181818;
-        text-align: center;
-        border-radius: 40px;
-    }
-
     section.achievements-section-middle-part {
-        display: grid;
-        place-content: space-evenly;
         font-size: 1.2em;
-    }
-
-    section.achievements-section-footer {
-        display: grid;
-        place-items: center;
     }
 
     section.view-awards-section {
-        background-color: #936cea;
-        width: 50%;
         font-size: 1.4em;
-        padding: 0.3em;
-        border-radius: 20px;
-        text-align: center;
-    }
-
-    a.view-awards-button {
-        text-decoration: none;
-        color: white;
     }
     /******* ACHIEVEMENT SECTION *******/
 
@@ -827,76 +505,35 @@
 
     /******* CONTACT SECTION *******/
     section.contact-section {
-        background-color: #101010;
         border-radius: 20px;
-        color: white;
-        display: grid;
-        grid-template-rows: 0.2fr 0.2fr 1fr;
-        width: 98%;
         margin-top: 7%;
     }
 
     section.contact-logo-section {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        place-items: center;
         font-size: 1em;
-    }
-
-    p.contact-logo-section-title {
-        justify-self: left;
-        color: #d3d2d2;
-    }
-
-    img.contact-logo {
-        justify-self: right;
     }
 
     section.contact-title-section {
         font-size: 1.4em;
-        display: grid;
-        place-items: center;
     }
 
     section.contact-details-section {
-        display: grid;
-        place-items: center;
         font-size: 1.8em;
     }
 
     section.contact-details-facebook {
-        background-color: #181818;
-        width: 50%;
-        text-align: center;
-        align-content: center;
-        border-radius: 20px;
         height: 100%;
     }
 
     section.contact-details-linkedin {
-        background-color: #181818;
-        width: 50%;
-        align-content: center;
-        text-align: center;
-        border-radius: 20px;
         height: 100%;
     }
 
     section.contact-details-github {
-        background-color: #181818;
-        width: 50%;
-        align-content: center;
-        text-align: center;
-        border-radius: 20px;
         height: 100%;
     }
 
     section.contact-details-x {
-        background-color: #181818;
-        width: 50%;
-        align-content: center;
-        text-align: center;
-        border-radius: 20px;
         height: 100%;
     }
     /******* CONTACT SECTION *******/
@@ -906,52 +543,21 @@
 
     /******* SKILLS SECTION *******/
     section.skills-section {
-        background-color: #101010;
         border-radius: 20px;
-        width: 98%;
-        color: white;
-        display: grid;
-        grid-template-rows: 0.5fr 1.5fr;
-        height: 98%;
         margin-top: 5%;
     }
 
     section.skills-section-header {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        place-items: center;
         font-size: 1em;
     }
 
-    p.skills-section-header-title {
-        color: #d3d2d2;
-        justify-self: left;
-    }
-
-    img.skills-section-header-logo {
-        justify-self: right;
-    }
-
     section.skills-section-footer {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
         font-size: 1.7em;
-        place-items: center;
     }
 
     section.common-skill-box {
-        background-color: #181818;
         height: 95%;
-        display: grid;
-        place-items: center;
-        border-radius: 30px;
-        width: 50%;
     }
-
-    p.skill-html-text {
-        font-size: 0.7em;
-    }
-
     /******* SKILLS SECTION *******/
 
 
@@ -959,36 +565,17 @@
 
     /******* FINISHING SECTION *******/
     section.finishing-section {
-        background-color: #101010;
         border-radius: 20px;
-        width: 98%;
-        color: white;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
         margin-top: 7%;
     }
 
-    section.finishing-section-header {
-        display: grid;
-        place-items: center;
-    }
-
     section.finishing-section-header-circle {
-        background-color: #181818;
         width: 15%;
         height: 100%;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
     }
 
     img.finishing-section-logo {
         width: 9vw;
-    }
-
-    section.finishing-section-middle {
-        display: grid;
-        place-items: center;
     }
 
     h3.finishing-section-middle-title {
@@ -997,41 +584,15 @@
 
     p.finishing-section-middle-footer {
         font-size: 0.9em;
-        color: #d3d2d2;
-    }
-
-    section.finishing-section-footer {
-        display: grid;
-        place-content: space-evenly;
     }
 
     section.finishing-section-footer-email {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #181818;
-        width: 100%;
-        place-items: center;
         font-size: 1.4em;
-        border-radius: 40px;
     }
 
     section.finishing-section-footer-schedule-call {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #181818;
-        width: 100%;
-        place-items: center;
         font-size: 1.4em;
-        border-radius: 40px;
         margin-top: 5%;
-    }
-
-    p.finishing-section-footer-call-text {
-        margin-left: -50%;
-    }
-
-    p.finishing-section-footer-email-text {
-        margin-left: -50%;
     }
     /******* FINISHING SECTION *******/
 }
