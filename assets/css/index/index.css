@@ -359,9 +359,11 @@ img.common-middle-logo-part {
 }
 
 img.profile-picture {
-    width: 60%;
     border-radius: 30px;
     background-color: #936cea;
+    max-width: 50%;
+    height: auto;
+    display: block;
 }
 /******* PROFILE SECTION *******/
 
