@@ -105,7 +105,7 @@
                     <p class="education">DIU, JOSEPH, FBIC</p>
                     <section class="education-button-section">
 
-                        <a class="education-button" href="#">View Education Details</a>
+                        <button id="pop-up-screen-open-button" onclick="document.getElementById('education-pop-up-screen-container').style.visibility='visible'">View Education Details</button>
 
                     </section>
 
@@ -447,6 +447,47 @@
                         </section>
 
                     </section>
+
+                </section>
+
+            </section>
+
+            <section id="education-pop-up-screen-container">
+
+                <section class="education-pop-up-screen-content">
+
+                    <section class="education-university-pop-up common-institute-pop-up-card">
+
+                        <p>B.Sc in CSE</p>
+                        <p>Daffodil International University</p>
+                        <p>CGPA: 3.94</p>
+                        <p>2025-2029</p>
+
+                    </section>
+
+                    <section class="education-college-pop-up common-institute-pop-up-card">
+
+                        <p>HSC</p>
+                        <p>St. Joseph Higher Secondary School</p>
+                        <p>GPA: 5.00</p>
+                        <p>2022-2023</p>
+
+                    </section>
+
+                    <section class="education-school-pop-up common-institute-pop-up-card">
+
+                        <p>SSC</p>
+                        <p>Firoza Bashar Ideal College</p>
+                        <p>GPA: 5.00</p>
+                        <p>2019-2021</p>
+
+                    </section>
+
+                </section>
+
+                <section class="pop-up-screen-exit-button-container">
+
+                    <button id="pop-up-screen-exit-button" onclick="document.getElementById('education-pop-up-screen-container').style.visibility='hidden'">Exit</button>
 
                 </section>
 

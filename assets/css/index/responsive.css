@@ -193,6 +193,18 @@
         font-size: 4em;
     }
     /******* FINISHING SECTION *******/
+
+
+
+    /******* EDUCATION POP-UP SECTION *******/
+    section.common-institute-pop-up-card {
+        font-size: 3em;
+    }
+
+    button#pop-up-screen-open-button {
+        font-size: 0.8em;
+    }
+    /******* EDUCATION POP-UP SECTION *******/
 }
 /******* 3K & 4K SCREEN *******/
 
@@ -341,6 +353,13 @@
         font-size: 1.3em;
     }
     /******* FINISHING SECTION *******/
+
+
+    /******* EDUCATION POP-UP SECTION *******/
+    button#pop-up-screen-open-button {
+        font-size: 1em;
+    }
+    /******* EDUCATION POP-UP SECTION *******/
 }
 /******* LAPTOP DEVICE *******/
 
@@ -570,6 +589,22 @@
         font-size: 1em;
     }
     /******* FINISHING SECTION *******/
+
+
+
+    /******* EDUCATION POP-UP SECTION *******/
+    section.common-institute-pop-up-card {
+        font-size: 0.8em;
+    }
+
+    button#pop-up-screen-exit-button {
+        font-size: 1.5em;
+    }
+
+    button#pop-up-screen-open-button {
+        font-size: 1.1em;
+    }
+    /******* EDUCATION POP-UP SECTION *******/
 }
 /******* TABLET DEVICE *******/
 
@@ -837,5 +872,23 @@
         margin-top: 5%;
     }
     /******* FINISHING SECTION *******/
+
+
+
+    section#education-pop-up-screen-container {
+        width: 90%;
+    }
+
+    section.common-institute-pop-up-card {
+        font-size: 0.7em;
+    }
+
+    button#pop-up-screen-exit-button {
+        font-size: 1em;
+    }
+
+    button#pop-up-screen-open-button {
+        font-size: 1em;
+    }
 }
 /******* MOBILE DEVICE *******/
