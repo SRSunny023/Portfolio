@@ -130,10 +130,6 @@
     section.achievements-section-middle-part {
         font-size: 1.2em;
     }
-
-    section.view-awards-section {
-        font-size: 1.3em;
-    }
     /******* ACHIEVEMENT SECTION *******/
 
 
@@ -355,11 +351,32 @@
     /******* FINISHING SECTION *******/
 
 
+
     /******* EDUCATION POP-UP SECTION *******/
     button#pop-up-screen-open-button {
         font-size: 1em;
     }
     /******* EDUCATION POP-UP SECTION *******/
+
+
+
+    /******* AWARDS POP-UP SECTION *******/
+    section.awards-takeoff-pop-up {
+        font-size: 1.4em;
+    }
+
+    img.takeoff-award-pic {
+        width: 40%;
+    }
+
+    button#awards-pop-up-screen-exit-button {
+        font-size: 2em;
+    }
+
+    section.awards-button-section {
+        font-size: 0.8em;
+    }
+    /******* AWARDS POP-UP SECTION *******/
 }
 /******* LAPTOP DEVICE *******/
 
@@ -505,9 +522,7 @@
         font-size: 1em;
     }
 
-    section.view-awards-section {
-        font-size: 1.4em;
-    }
+    
     /******* ACHIEVEMENT SECTION *******/
 
 
@@ -605,6 +620,20 @@
         font-size: 1.1em;
     }
     /******* EDUCATION POP-UP SECTION *******/
+
+    /******* AWARDS POP-UP SECTION *******/
+    section.awards-takeoff-pop-up {
+        font-size: 1.4em;
+    }
+
+    img.takeoff-award-pic {
+        width: 50%;
+    }
+
+    button#awards-pop-up-screen-exit-button {
+        font-size: 2em;
+    }
+    /******* AWARDS POP-UP SECTION *******/
 }
 /******* TABLET DEVICE *******/
 
@@ -773,10 +802,6 @@
     section.achievements-section-middle-part {
         font-size: 1.2em;
     }
-
-    section.view-awards-section {
-        font-size: 1.4em;
-    }
     /******* ACHIEVEMENT SECTION *******/
 
 
@@ -874,7 +899,7 @@
     /******* FINISHING SECTION *******/
 
 
-
+    /******* EDUCATION POP-UP SECTION *******/
     section#education-pop-up-screen-container {
         width: 100vw;
     }
@@ -890,5 +915,24 @@
     button#pop-up-screen-open-button {
         font-size: 1em;
     }
+    /******* EDUCATION POP-UP SECTION *******/
+
+    /******* AWARDS POP-UP SECTION *******/
+    section#awards-pop-up-screen-container {
+        width: 100vw;
+    }
+
+    section.awards-takeoff-pop-up {
+        font-size: 1.2em;
+    }
+
+    img.takeoff-award-pic {
+        width: 80%;
+    }
+
+    button#awards-pop-up-screen-exit-button {
+        font-size: 2em;
+    }
+    /******* AWARDS POP-UP SECTION *******/
 }
 /******* MOBILE DEVICE *******/
