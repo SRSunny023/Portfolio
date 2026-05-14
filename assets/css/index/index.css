@@ -703,26 +703,29 @@ p.finishing-section-footer-email-text {
 section#education-pop-up-screen-container {
     position: fixed;
     place-self: center;
-    width: 50%;
-    aspect-ratio: 16/9;
-    border-radius: 20px;
-    background-color: #936cea;
-    box-shadow: 10px 10px 10px #474646;
+    width: 100vw;
+    height: 100%;
     visibility: hidden;
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.4);
+    place-content: center;
 }
 
 section.education-pop-up-screen-content {
-    height: 100%;
+    height: 50%;
+    width: 50%;
     display: grid;
+    grid-template-rows: 1.9fr 0.1fr;
     grid-template-columns: repeat(3, auto);
-    place-items: center;
+    grid-template-areas:
+        'education-university-pop-up-one education-university-pop-up-two education-university-pop-up-three'
+        'education-university-pop-up-exit education-university-pop-up-exit education-university-pop-up-exit';
+    justify-self: center;
     column-gap: 3%;
+    align-items: center;
 }
 
 section.common-institute-pop-up-card {
-    background-color: red;
     height: 70%;
     border-radius: 20px;
     display: flex;
@@ -737,25 +740,23 @@ section.common-institute-pop-up-card {
 }
 
 section.education-university-pop-up {
-    margin-left: 5%;
-    background-color: green;
+    grid-area: education-university-pop-up-one;
+    background-color: #ff00003d;
 }
 
 section.education-school-pop-up {
-    margin-right: 5%;
-    background-color: blue;
+    grid-area: education-university-pop-up-three;
+    background-color: #0000ff3d;
 }
 
 section.pop-up-screen-exit-button-container {
-    height: 15%;
-    width: 30%;
-    background-color: #895100;
+    width: 50%;
     border-radius: 20px;
     place-self: center;
     place-content: center;
     text-align: center;
-    box-shadow: 10px 10px 20px #331e00;
     cursor: pointer;
+    grid-area: education-university-pop-up-exit;
 }
 
 button#pop-up-screen-exit-button {
@@ -776,3 +777,8 @@ button#pop-up-screen-open-button {
     cursor: pointer;
 }
 /******* EDUCATION POP-UP SECTION *******/
+
+section.education-college-pop-up.common-institute-pop-up-card {
+    grid-area: education-university-pop-up-two;
+    background-color: #0080003d;
+}
